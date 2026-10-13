@@ -1,0 +1,10 @@
+{
+  "organization": "Sample Fellowship",
+  "products": [
+    {"product":"check_ins","paid":true,"tier":"Large","limit":500,"unit":"unique people checked in","metric":{"type":"distinct","field":"person_id"},"monthly_price":40,"lower_tier":{"tier":"Small","limit":200},"lower_monthly_price":20,"api":{"path":"/check-ins/v2/check_ins","date_field":"created_at"}},
+    {"product":"registrations","paid":true,"tier":"Standard","limit":100,"unit":"attendee records","metric":{"type":"records"},"monthly_price":30,"lower_tier":{"tier":"Basic","limit":50},"lower_monthly_price":15,"api":{"path":"/registrations/v2/attendees","date_field":"created_at"}},
+    {"product":"giving","paid":true,"tier":"Standard","limit":100,"unit":"unique donors","metric":{"type":"distinct","field":"person_id"},"monthly_price":25,"api":{"path":"/giving/v2/donations","date_field":"created_at"}},
+    {"product":"services","paid":true,"tier":"Standard","limit":100,"unit":"service plans","metric":{"type":"records"},"monthly_price":20,"api":{"path":"/services/v2/service_types/SAMPLE-SERVICE-TYPE-ID/plans","date_field":"created_at"}},
+    {"product":"publishing","paid":true,"tier":"Standard","limit":20,"unit":"published episodes","metric":{"type":"records"},"monthly_price":12,"api":{"path":"/publishing/v2/episodes","date_field":"published_to_library_at","null_date_is_unused":true}}
+  ]
+}

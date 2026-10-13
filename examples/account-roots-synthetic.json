@@ -1,0 +1,23 @@
+{
+  "services": {
+    "data": {
+      "type": "Organization",
+      "id": "SYNTHETIC-SERVICES-ID",
+      "attributes": {
+        "people_allowed": 80,
+        "people_remaining": 73,
+        "file_storage_size": 6000,
+        "file_storage_size_used": 800
+      },
+      "relationships": {}
+    }
+  },
+  "check_ins": {
+    "data": {
+      "type": "Organization",
+      "id": "SYNTHETIC-CHECK-INS-ID",
+      "attributes": {"daily_check_ins": 360},
+      "relationships": {}
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "check_ins": [
+    {"type":"CheckIn","id":"SAMPLE-CI-001","attributes":{"created_at":"2026-10-01T10:00:00Z"},"relationships":{"person":{"data":{"type":"Person","id":"SAMPLE-PERSON-001"}}}},
+    {"type":"CheckIn","id":"SAMPLE-CI-002","attributes":{"created_at":"2026-10-02T10:00:00Z"},"relationships":{"person":{"data":{"type":"Person","id":"SAMPLE-PERSON-001"}}}},
+    {"type":"CheckIn","id":"SAMPLE-CI-003","attributes":{"created_at":"2026-10-03T10:00:00Z"},"relationships":{"person":{"data":{"type":"Person","id":"SAMPLE-PERSON-002"}}}}
+  ],
+  "registrations": [
+    {"type":"Attendee","id":"SAMPLE-REG-001","attributes":{"created_at":"2026-10-04T10:00:00Z"}},
+    {"type":"Attendee","id":"SAMPLE-REG-002","attributes":{"created_at":"2026-10-05T10:00:00Z"}}
+  ],
+  "giving": [],
+  "services": [
+    {"type":"Plan","id":"SAMPLE-PLAN-001","attributes":{"created_at":"2026-10-05T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-002","attributes":{"created_at":"2026-10-06T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-003","attributes":{"created_at":"2026-10-07T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-004","attributes":{"created_at":"2026-10-08T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-005","attributes":{"created_at":"2026-10-09T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-006","attributes":{"created_at":"2026-10-10T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-007","attributes":{"created_at":"2026-10-11T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-008","attributes":{"created_at":"2026-10-12T10:00:00Z"}},
+    {"type":"Plan","id":"SAMPLE-PLAN-009","attributes":{"created_at":"2026-10-13T10:00:00Z"}}
+  ],
+  "publishing": [
+    {"type":"Episode","id":"SAMPLE-EPISODE-001","attributes":{"published_to_library_at":"2026-10-01T10:00:00Z"}}
+  ]
+}

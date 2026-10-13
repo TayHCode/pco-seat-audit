@@ -1,0 +1,73 @@
+{
+  "organization": "Sample Fellowship",
+  "products": [
+    {
+      "product": "check_ins",
+      "unit": "unique people checked in",
+      "metric": {
+        "type": "distinct",
+        "field": "person_id"
+      },
+      "lower_tier": {
+        "tier": "Small",
+        "limit": 200
+      },
+      "lower_monthly_price": 20,
+      "api": {
+        "path": "/check-ins/v2/check_ins",
+        "date_field": "created_at"
+      }
+    },
+    {
+      "product": "registrations",
+      "unit": "attendee records",
+      "metric": {
+        "type": "records"
+      },
+      "lower_tier": {
+        "tier": "Basic",
+        "limit": 50
+      },
+      "lower_monthly_price": 15,
+      "api": {
+        "path": "/registrations/v2/attendees",
+        "date_field": "created_at"
+      }
+    },
+    {
+      "product": "giving",
+      "unit": "unique donors",
+      "metric": {
+        "type": "distinct",
+        "field": "person_id"
+      },
+      "api": {
+        "path": "/giving/v2/donations",
+        "date_field": "created_at"
+      }
+    },
+    {
+      "product": "services",
+      "unit": "service plans",
+      "metric": {
+        "type": "records"
+      },
+      "api": {
+        "path": "/services/v2/service_types/SAMPLE-SERVICE-TYPE-ID/plans",
+        "date_field": "created_at"
+      }
+    },
+    {
+      "product": "publishing",
+      "unit": "published episodes",
+      "metric": {
+        "type": "records"
+      },
+      "api": {
+        "path": "/publishing/v2/episodes",
+        "date_field": "published_to_library_at",
+        "null_date_is_unused": true
+      }
+    }
+  ]
+}

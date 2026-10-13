@@ -1,0 +1,90 @@
+{
+  "quickstart": [
+    {
+      "file": "README.md",
+      "line": 14,
+      "argv": [
+        "python3",
+        "-m",
+        "pco_seat_audit",
+        "--plan",
+        "examples/plan.json",
+        "--usage",
+        "examples/usage.json",
+        "--as-of",
+        "2026-10-13T12:00:00Z",
+        "--output",
+        "report.txt"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 20,
+      "argv": [
+        "python3",
+        "-m",
+        "pco_seat_audit",
+        "--subscriptions",
+        "examples/subscriptions-synthetic.txt",
+        "--account-roots",
+        "examples/account-roots-synthetic.json",
+        "--usage",
+        "examples/usage.json",
+        "--as-of",
+        "2026-10-13T12:00:00Z",
+        "--output",
+        "report.txt"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 26,
+      "argv": [
+        "python3",
+        "-m",
+        "pco_seat_audit",
+        "--subscriptions",
+        "examples/subscriptions-synthetic.txt",
+        "--account-roots",
+        "examples/account-roots-synthetic.json",
+        "--change-plans",
+        "examples/change-plans-synthetic.txt",
+        "--ladder-date",
+        "2026-10-13",
+        "--usage",
+        "examples/usage.json",
+        "--as-of",
+        "2026-10-13T12:00:00Z",
+        "--output",
+        "report.txt"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 32,
+      "argv": [
+        "python3",
+        "-m",
+        "pco_seat_audit",
+        "--subscriptions",
+        "examples/subscriptions-synthetic.txt",
+        "--import-only",
+        "--output",
+        "report.txt"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "role": "tests"
+    }
+  ]
+}
