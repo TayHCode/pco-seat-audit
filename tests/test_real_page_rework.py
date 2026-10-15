@@ -59,7 +59,7 @@ class PageQuirkTests(unittest.TestCase):
         no_storage = text.replace('17GB Storage\n', '')
         self.assertTrue(next(row for row in extract_billing(no_storage, True)['products']
                              if row['product'] == 'services')['paid'])
-        # A status in its own product block must still be recognised.
+
         self.assertFalse(extract_billing('Services\nNot Subscribed', True)['products'][0]['paid'])
 
     def test_ladder_singular_plural_storage_and_dash(self):
